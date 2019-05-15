@@ -1,0 +1,19 @@
+#include <iostream>
+
+	using namespace std;
+
+	int main()
+	{
+	int number,y1=1,y2=1,y3=1;
+	cout << "Enter a nuber to obtain fibonacci series:\t";
+	cin >> number;
+	cout << y1 <<" ";
+	while (y3<number)
+	{
+	y1=y2;
+	y2=y3;
+	cout << y3 << " ";
+	y3=y1+y2;
+	}
+	return 0;
+	}

@@ -1,0 +1,33 @@
+#include <iostream>
+
+	using namespace std;
+
+	int main()
+	{
+	int num[10];
+	int x,y,z;
+	for (x=0;x<=8;x++)
+	{
+	cout << "Please enter your numbers: ";
+	cin >> num[x];
+	}
+	for (x=0;x<=8;x++)
+	{
+	for (y=x+2;y<=8;y++)
+	{
+	if (num[x]> num[y])
+	{
+	z=num[x];
+	num[x]=num[y];
+	num[y]=z;
+	}
+	}
+	}
+	cout <<"\nAfter sort:"<< endl;
+	for (x=0;x<=8;x++)
+	{
+	cout <<"\t "<< num[x] << endl;
+	}
+	return 0;
+	}
+
